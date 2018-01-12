@@ -1,0 +1,246 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "give me sometime to check this, will get back to you later",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "can you help me in finding the PI configurations?",
+        "intent": "piInterfacelookup",
+        "entities": []
+      },
+      {
+        "text": "can you get me the live interfaces in PI?",
+        "intent": "piInterfacelookup",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "live",
+            "entity": "prod"
+          }
+        ]
+      },
+      {
+        "text": "I need the list of interfaces connecting to ECC",
+        "intent": "piInterfacelookup",
+        "entities": [
+          {
+            "start": 44,
+            "end": 47,
+            "value": "ECC",
+            "entity": "ECC"
+          }
+        ]
+      },
+      {
+        "text": "we have planned an upgrade on ECC systems, how can we hold the transactions during outage?",
+        "intent": "outageplan",
+        "entities": [
+          {
+            "start": 30,
+            "end": 33,
+            "value": "ECC",
+            "entity": "ECC"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "upgrade",
+            "entity": "upgrade"
+          },
+          {
+            "start": 83,
+            "end": 89,
+            "value": "outage",
+            "entity": "outage"
+          }
+        ]
+      },
+
+      {
+        "text": "its going to start on",
+        "intent": "upgradedetails",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "start",
+            "entity": "start"
+          }
+        ]
+      },
+      {
+        "text": "its going to end on",
+        "intent": "upgradedetails",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "end",
+            "entity": "end"
+          }
+        ]
+      },
+      {
+        "text": "ok we are good with this, please proceed",
+        "intent": "upgradedetails",
+        "entities": []
+      },
+      {
+        "text": "ok can you check my calendar and schedule it?",
+        "intent": "schedule",
+        "entities": []
+      },
+      {
+        "text": "I meet the auditor and clarified all his queries, we are good now",
+        "intent": "done",
+        "entities": []
+      },
+      {
+        "text": "ok can you also get me the users who can change users and roles",
+        "intent": "userAndSap",
+        "entities": []
+      },
+      {
+        "text": "get me all users who can modify users and roles",
+        "intent": "userAndSap",
+        "entities": []
+      },
+      {
+        "text": "Get me the details of all users with SAP Standard Profiles",
+        "intent": "userAndSap",
+        "entities": []
+      },
+      {
+        "text": "Get me all SAP Standard Profiles users",
+        "intent": "userAndSap",
+        "entities": []
+      },
+      {
+        "text": "what have you got for me",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "who are you",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "I have a question on SAP Standard profile users,can I talk to your technical expert?",
+        "intent": "meet-te",
+        "entities": [
+          {
+            "start": 21,
+            "end": 41,
+            "value": "SAP Standard profile",
+            "entity": "sap-standard-profile"
+          },
+          {
+            "start": 67,
+            "end": 83,
+            "value": "technical expert",
+            "entity": "te"
+          }
+        ]
+      },
+      {
+        "text": "can you setup a meeting to go through this tomorrow?",
+        "intent": "meet-te",
+        "entities": [
+          {
+            "start": 43,
+            "end": 51,
+            "value": "tomorrow",
+            "entity": "tomorrow"
+          }
+        ]
+      }
+    ],
+    "entity_examples": [],
+    "intent_examples": []
+  }
+}
